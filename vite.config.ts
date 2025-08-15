@@ -23,6 +23,7 @@ export default defineConfig({
       "@assets": path.resolve(import.meta.dirname, "attached_assets"),
     },
   },
+  root:'client',
   base: '/',                 // IMPORTANT for Vercel domain root
   build: {
     outDir: 'dist',          // put index.html directly in /dist
