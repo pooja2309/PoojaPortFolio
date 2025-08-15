@@ -321,7 +321,7 @@ export default function Home() {
     {
       id: 1,
       title: "Program Manager Intern - AI & Digital Transformation",
-      company: "Micron Technology",
+      company: "Micron Technology, Idaho, USA",
       period: "May 2025 - Present",
       description:
         "Leading AI & Digital Transformation initiatives that enhance global procurement processes. Managing cross-functional teams to deliver enterprise-scale automation solutions.",
@@ -339,7 +339,7 @@ export default function Home() {
     {
       id: 2,
       title: "Teaching Assistant & Grader",
-      company: "Mays Business School - Flex MBA",
+      company: "Mays Business School - FOMBA, Texas, USA",
       period: "2025-Present",
       description:
         "Supported instruction & evaluation for graduate-level courses: SCMT 610 – Business Analytics and MGMT 638 – Strategic Entrepreneurship. Assisted with course delivery, grading assignments and exams, providing feedback to students, and facilitating academic support to enhance learning outcomes.",
