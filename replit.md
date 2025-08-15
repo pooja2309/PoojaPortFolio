@@ -6,14 +6,19 @@ A modern full-stack portfolio website built with React, Express, and PostgreSQL.
 
 ## Recent Updates (August 2025)
 
-### Education Section Enhancement
-- Added responsive horizontal scrollable Education carousel with 4 featured educational experiences
-- Implemented "Show More" functionality for additional certifications and executive education
-- Professional gradient background with glass morphism effects for modern aesthetic
-- Interactive navigation arrows and dot indicators for seamless user experience
-- Semantic HTML structure with comprehensive accessibility attributes
+### Portfolio Structure Optimization
+- Replaced Journey section with dedicated Work Experience section for better professional focus
+- Implemented Projects carousel with 3 featured projects, navigation arrows, and dot indicators
+- Updated navigation to reflect streamlined sections: Home, Education, Work Experience, Projects, Skills, Interests, Contact
+- Maintained Education carousel with 4 educational experiences and "Show More" functionality
 
-### Color Palette Refinement
+### Projects Section Enhancement
+- Created interactive Projects carousel with professional gradient background and glass morphism effects
+- Featured 3 major projects with detailed impact metrics and technology tags
+- Added navigation arrows and dot indicators for smooth user experience
+- Professional card layouts with image and content split design
+
+### Color Palette & Design
 - Enhanced color scheme for more professional and aesthetic appearance:
   - Navy: Deeper, more sophisticated tone (hsl(215 28% 17%))
   - Soft Blue: More muted and professional (hsl(213 47% 58%))
