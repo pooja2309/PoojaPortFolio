@@ -2,7 +2,25 @@
 
 ## Overview
 
-A modern full-stack portfolio website built with React, Express, and PostgreSQL. The application features a professional design with sections for personal information, skills, projects, services, and a contact form. It showcases technical expertise through a clean, responsive interface with smooth animations and professional styling using shadcn/ui components.
+A modern full-stack portfolio website built with React, Express, and PostgreSQL. The application features a professional design with sections for personal information, education carousel, journey progression, skills, projects, interests, and a contact form. It showcases technical expertise through a clean, responsive interface with smooth animations, professional gradient backgrounds, and an aesthetic color palette using shadcn/ui components.
+
+## Recent Updates (August 2025)
+
+### Education Section Enhancement
+- Added responsive horizontal scrollable Education carousel with 4 featured educational experiences
+- Implemented "Show More" functionality for additional certifications and executive education
+- Professional gradient background with glass morphism effects for modern aesthetic
+- Interactive navigation arrows and dot indicators for seamless user experience
+- Semantic HTML structure with comprehensive accessibility attributes
+
+### Color Palette Refinement
+- Enhanced color scheme for more professional and aesthetic appearance:
+  - Navy: Deeper, more sophisticated tone (hsl(215 28% 17%))
+  - Soft Blue: More muted and professional (hsl(213 47% 58%))
+  - Gold: Warmer, more elegant accent (hsl(38 85% 60%))
+  - Warm Gray: Better contrast and readability (hsl(217 10% 46%))
+- Glass morphism effects with backdrop blur for modern premium look
+- Professional gradient backgrounds spanning navy to gold spectrum
 
 ## User Preferences
 

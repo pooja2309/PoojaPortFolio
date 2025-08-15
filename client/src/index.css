@@ -53,11 +53,11 @@
   --tracking-normal: 0em;
   --spacing: 0.25rem;
   
-  /* Portfolio specific colors */
-  --navy: hsl(210 68% 32%);
-  --warm-gray: hsl(217 10% 42%);
-  --soft-blue: hsl(213 94% 58%);
-  --gold: hsl(45 93% 47%);
+  /* Portfolio specific colors - More aesthetic and professional */
+  --navy: hsl(215 28% 17%);
+  --warm-gray: hsl(217 10% 46%);
+  --soft-blue: hsl(213 47% 58%);
+  --gold: hsl(38 85% 60%);
 }
 
 .dark {
@@ -107,11 +107,11 @@
   --shadow-xl: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00), 0px 8px 10px -1px hsl(202.8169 89.1213% 53.1373% / 0.00);
   --shadow-2xl: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0.00);
   
-  /* Portfolio specific colors for dark mode */
-  --navy: hsl(210 68% 25%);
-  --warm-gray: hsl(217 10% 60%);
-  --soft-blue: hsl(213 94% 65%);
-  --gold: hsl(45 93% 55%);
+  /* Portfolio specific colors for dark mode - More aesthetic and professional */
+  --navy: hsl(215 28% 25%);
+  --warm-gray: hsl(217 10% 65%);
+  --soft-blue: hsl(213 47% 70%);
+  --gold: hsl(38 85% 70%);
 }
 
 @layer base {
@@ -218,6 +218,30 @@
     opacity: 1 !important;
     transform: translateY(0) !important;
   }
+
+  .education-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 250, 252, 0.95) 100%);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+
+  .education-carousel {
+    scroll-snap-type: x mandatory;
+  }
+
+  .education-carousel > * {
+    scroll-snap-align: center;
+  }
+
+  .professional-gradient {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--soft-blue) 50%, var(--gold) 100%);
+  }
+
+  .glass-effect {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
 }
 
 @layer utilities {
@@ -242,54 +266,54 @@
   }
 
   .border-soft-blue\/20 {
-    border-color: hsl(213 94% 58% / 0.2);
+    border-color: hsl(213 47% 58% / 0.2);
   }
 
   .border-gold\/20 {
-    border-color: hsl(45 93% 47% / 0.2);
+    border-color: hsl(38 85% 60% / 0.2);
   }
 
   .border-navy\/20 {
-    border-color: hsl(210 68% 32% / 0.2);
+    border-color: hsl(215 28% 17% / 0.2);
   }
 
   .from-navy\/10 {
-    --tw-gradient-from: hsl(210 68% 32% / 0.1);
+    --tw-gradient-from: hsl(215 28% 17% / 0.1);
   }
 
   .to-navy\/10 {
-    --tw-gradient-to: hsl(210 68% 32% / 0.1);
+    --tw-gradient-to: hsl(215 28% 17% / 0.1);
   }
 
   .from-soft-blue\/10 {
-    --tw-gradient-from: hsl(213 94% 58% / 0.1);
+    --tw-gradient-from: hsl(213 47% 58% / 0.1);
   }
 
   .to-soft-blue\/10 {
-    --tw-gradient-to: hsl(213 94% 58% / 0.1);
+    --tw-gradient-to: hsl(213 47% 58% / 0.1);
   }
 
   .from-gold\/10 {
-    --tw-gradient-from: hsl(45 93% 47% / 0.1);
+    --tw-gradient-from: hsl(38 85% 60% / 0.1);
   }
 
   .to-gold\/10 {
-    --tw-gradient-to: hsl(45 93% 47% / 0.1);
+    --tw-gradient-to: hsl(38 85% 60% / 0.1);
   }
 
   .bg-soft-blue\/10 {
-    background-color: hsl(213 94% 58% / 0.1);
+    background-color: hsl(213 47% 58% / 0.1);
   }
 
   .bg-gold\/10 {
-    background-color: hsl(45 93% 47% / 0.1);
+    background-color: hsl(38 85% 60% / 0.1);
   }
 
   .bg-navy\/10 {
-    background-color: hsl(210 68% 32% / 0.1);
+    background-color: hsl(215 28% 17% / 0.1);
   }
 
   .hover\:bg-gold\/90:hover {
-    background-color: hsl(45 93% 47% / 0.9);
+    background-color: hsl(38 85% 60% / 0.9);
   }
 }

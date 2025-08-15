@@ -37,11 +37,19 @@ import {
   Linkedin,
   Phone,
   Menu,
-  X
+  X,
+  GraduationCap,
+  Award,
+  ChevronLeft,
+  ChevronRight,
+  Plus,
+  ExternalLink
 } from "lucide-react";
 
 export default function Home() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [currentEducationIndex, setCurrentEducationIndex] = useState(0);
+  const [showMoreEducation, setShowMoreEducation] = useState(false);
   const { toast } = useToast();
 
   const form = useForm<InsertContactSubmission>({
@@ -178,6 +186,90 @@ export default function Home() {
     }
   ];
 
+  const educationExperiences = [
+    {
+      id: 1,
+      title: "MBA in Business Administration",
+      institution: "University of California, Berkeley",
+      year: "2020",
+      description: "Specialized in Technology Management and Digital Innovation. Focused on strategic leadership and product development in technology-driven organizations.",
+      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      tags: ["Strategic Leadership", "Digital Innovation", "Product Management", "Data Analytics"],
+      type: "degree",
+      featured: true
+    },
+    {
+      id: 2,
+      title: "B.S. Computer Science",
+      institution: "Stanford University",
+      year: "2016",
+      description: "Strong foundation in software engineering, data structures, and algorithms. Capstone project focused on machine learning applications in business processes.",
+      image: "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      tags: ["Software Engineering", "Machine Learning", "Data Structures", "Algorithms"],
+      type: "degree",
+      featured: true
+    },
+    {
+      id: 3,
+      title: "Fintech Product Manager Certificate",
+      institution: "Citi Innovation Lab",
+      year: "2022",
+      description: "Intensive program focused on building scalable financial tools for global clients. Gained expertise in regulatory compliance and digital banking solutions.",
+      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      tags: ["Fintech", "Product Strategy", "Regulatory Compliance", "Digital Banking"],
+      type: "certification",
+      featured: true
+    },
+    {
+      id: 4,
+      title: "AI & Machine Learning Specialization",
+      institution: "Google Cloud Platform",
+      year: "2023",
+      description: "Comprehensive training in cloud-based AI solutions and enterprise machine learning deployment. Focus on scalable AI architecture and MLOps practices.",
+      image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      tags: ["AI/ML", "Cloud Computing", "MLOps", "Enterprise Architecture"],
+      type: "certification",
+      featured: true
+    },
+    {
+      id: 5,
+      title: "Agile & Scrum Master Certification",
+      institution: "Scaled Agile Framework",
+      year: "2021",
+      description: "Advanced certification in agile methodologies and scaled agile frameworks. Focus on leading cross-functional teams and managing enterprise-level agile transformations.",
+      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      tags: ["Agile", "Scrum", "Team Leadership", "Process Optimization"],
+      type: "certification",
+      featured: false
+    },
+    {
+      id: 6,
+      title: "Data Science for Business Leaders",
+      institution: "MIT Sloan Executive Education",
+      year: "2022",
+      description: "Executive program focused on leveraging data science for strategic business decisions. Emphasis on data-driven transformation and analytics leadership.",
+      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      tags: ["Data Science", "Business Strategy", "Analytics", "Executive Leadership"],
+      type: "executive",
+      featured: false
+    }
+  ];
+
+  const featuredEducation = educationExperiences.filter(exp => exp.featured);
+  const additionalEducation = educationExperiences.filter(exp => !exp.featured);
+
+  const nextEducationSlide = () => {
+    setCurrentEducationIndex((prev) => 
+      prev === featuredEducation.length - 1 ? 0 : prev + 1
+    );
+  };
+
+  const prevEducationSlide = () => {
+    setCurrentEducationIndex((prev) => 
+      prev === 0 ? featuredEducation.length - 1 : prev - 1
+    );
+  };
+
   const interests = [
     {
       icon: BookOpen,
@@ -228,6 +320,7 @@ export default function Home() {
             {/* Desktop Navigation */}
             <div className="hidden md:flex space-x-8">
               <a href="#home" className="text-warm-gray hover:text-soft-blue transition-colors" data-testid="nav-home">Home</a>
+              <a href="#education" className="text-warm-gray hover:text-soft-blue transition-colors" data-testid="nav-education">Education</a>
               <a href="#journey" className="text-warm-gray hover:text-soft-blue transition-colors" data-testid="nav-journey">Journey</a>
               <a href="#projects" className="text-warm-gray hover:text-soft-blue transition-colors" data-testid="nav-projects">Projects</a>
               <a href="#skills" className="text-warm-gray hover:text-soft-blue transition-colors" data-testid="nav-skills">Skills</a>
@@ -250,6 +343,7 @@ export default function Home() {
             <div className="md:hidden py-4 border-t border-gray-200">
               <div className="flex flex-col space-y-4">
                 <a href="#home" className="text-warm-gray hover:text-soft-blue transition-colors" data-testid="nav-mobile-home">Home</a>
+                <a href="#education" className="text-warm-gray hover:text-soft-blue transition-colors" data-testid="nav-mobile-education">Education</a>
                 <a href="#journey" className="text-warm-gray hover:text-soft-blue transition-colors" data-testid="nav-mobile-journey">Journey</a>
                 <a href="#projects" className="text-warm-gray hover:text-soft-blue transition-colors" data-testid="nav-mobile-projects">Projects</a>
                 <a href="#skills" className="text-warm-gray hover:text-soft-blue transition-colors" data-testid="nav-mobile-skills">Skills</a>
@@ -298,6 +392,177 @@ export default function Home() {
               >
                 Get In Touch
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section id="education" className="py-20 professional-gradient opacity-0 translate-y-5 transition-all duration-700 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-white/10 via-transparent to-white/5"></div>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-inter font-bold text-white mb-6">Education & Professional Development</h2>
+            <p className="text-xl text-white/90 max-w-3xl mx-auto">
+              A continuous journey of learning, from foundational degrees to cutting-edge certifications in technology and business.
+            </p>
+          </div>
+
+          {/* Featured Education Carousel */}
+          <div className="relative mb-12">
+            <div className="overflow-hidden rounded-2xl">
+              <div 
+                className="flex transition-transform duration-500 ease-in-out"
+                style={{ transform: `translateX(-${currentEducationIndex * 100}%)` }}
+              >
+                {featuredEducation.map((edu, index) => (
+                  <div key={edu.id} className="w-full flex-shrink-0">
+                    <Card className="mx-4 education-card rounded-2xl shadow-2xl overflow-hidden border border-white/30 h-full backdrop-blur-sm">
+                      <div className="md:flex">
+                        <div className="md:w-1/3">
+                          <img 
+                            src={edu.image} 
+                            alt={`${edu.institution} campus or related imagery`}
+                            className="w-full h-48 md:h-full object-cover"
+                            data-testid={`img-education-${edu.id}`}
+                          />
+                        </div>
+                        <div className="md:w-2/3 p-8">
+                          <div className="flex items-center mb-4">
+                            <div className="w-12 h-12 bg-gradient-to-br from-soft-blue to-gold rounded-xl flex items-center justify-center">
+                              {edu.type === 'degree' ? (
+                                <GraduationCap className="text-white w-6 h-6" />
+                              ) : (
+                                <Award className="text-white w-6 h-6" />
+                              )}
+                            </div>
+                            <div className="ml-4">
+                              <h3 className="text-2xl font-inter font-bold text-navy">{edu.title}</h3>
+                              <p className="text-soft-blue font-semibold">{edu.institution}</p>
+                            </div>
+                            <div className="ml-auto">
+                              <span className="bg-gold/10 text-gold px-3 py-1 rounded-full text-sm font-semibold">
+                                {edu.year}
+                              </span>
+                            </div>
+                          </div>
+                          
+                          <p className="text-warm-gray leading-relaxed mb-6">
+                            {edu.description}
+                          </p>
+                          
+                          <div className="flex flex-wrap gap-2">
+                            {edu.tags.map((tag, tagIndex) => (
+                              <span 
+                                key={tagIndex}
+                                className="bg-navy/10 text-navy px-3 py-1 rounded-full text-sm skill-badge"
+                                data-testid={`tag-education-${edu.id}-${tagIndex}`}
+                              >
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                        </div>
+                      </div>
+                    </Card>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Navigation Arrows */}
+            <button
+              onClick={prevEducationSlide}
+              className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 glass-effect rounded-full p-3 shadow-lg hover:shadow-xl transition-all border border-white/30 hover:border-white/50"
+              data-testid="button-education-prev"
+            >
+              <ChevronLeft className="w-6 h-6 text-white" />
+            </button>
+            
+            <button
+              onClick={nextEducationSlide}
+              className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 glass-effect rounded-full p-3 shadow-lg hover:shadow-xl transition-all border border-white/30 hover:border-white/50"
+              data-testid="button-education-next"
+            >
+              <ChevronRight className="w-6 h-6 text-white" />
+            </button>
+
+            {/* Dots Indicator */}
+            <div className="flex justify-center mt-6 space-x-2">
+              {featuredEducation.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => setCurrentEducationIndex(index)}
+                  className={`w-3 h-3 rounded-full transition-all ${
+                    index === currentEducationIndex 
+                      ? 'bg-white scale-110 shadow-lg' 
+                      : 'bg-white/50 hover:bg-white/70'
+                  }`}
+                  data-testid={`dot-education-${index}`}
+                />
+              ))}
+            </div>
+          </div>
+
+          {/* Show More Section */}
+          <div className="text-center">
+            <button
+              onClick={() => setShowMoreEducation(!showMoreEducation)}
+              className="inline-flex items-center gap-2 glass-effect text-white px-8 py-4 rounded-lg font-semibold hover:shadow-lg transition-all border border-white/30 hover:border-white/50"
+              data-testid="button-show-more-education"
+            >
+              <Plus className={`w-5 h-5 transition-transform ${showMoreEducation ? 'rotate-45' : ''}`} />
+              {showMoreEducation ? 'Show Less' : 'Show More Certifications'}
+            </button>
+          </div>
+
+          {/* Additional Education - Collapsible */}
+          <div className={`transition-all duration-500 overflow-hidden ${
+            showMoreEducation ? 'max-h-screen opacity-100 mt-8' : 'max-h-0 opacity-0'
+          }`}>
+            <div className="grid md:grid-cols-2 gap-6">
+              {additionalEducation.map((edu) => (
+                <Card key={edu.id} className="card-hover bg-white rounded-xl shadow-md overflow-hidden border border-gray-200">
+                  <div className="flex">
+                    <div className="w-24 flex-shrink-0">
+                      <img 
+                        src={edu.image} 
+                        alt={`${edu.institution} related imagery`}
+                        className="w-full h-full object-cover"
+                        data-testid={`img-additional-education-${edu.id}`}
+                      />
+                    </div>
+                    <div className="flex-1 p-4">
+                      <div className="flex items-start justify-between mb-2">
+                        <div>
+                          <h4 className="font-inter font-semibold text-navy text-sm">{edu.title}</h4>
+                          <p className="text-soft-blue text-xs">{edu.institution}</p>
+                        </div>
+                        <span className="bg-gold/10 text-gold px-2 py-1 rounded text-xs">
+                          {edu.year}
+                        </span>
+                      </div>
+                      <p className="text-warm-gray text-xs leading-relaxed mb-3">
+                        {edu.description}
+                      </p>
+                      <div className="flex flex-wrap gap-1">
+                        {edu.tags.slice(0, 2).map((tag, tagIndex) => (
+                          <span 
+                            key={tagIndex}
+                            className="bg-navy/10 text-navy px-2 py-1 rounded text-xs"
+                            data-testid={`tag-additional-education-${edu.id}-${tagIndex}`}
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                        {edu.tags.length > 2 && (
+                          <span className="text-warm-gray text-xs">+{edu.tags.length - 2} more</span>
+                        )}
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+              ))}
             </div>
           </div>
         </div>
