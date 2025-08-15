@@ -26,7 +26,7 @@ export default defineConfig({
   root:'client',
   base: '/',                 // IMPORTANT for Vercel domain root
   build: {
-    outDir: 'dist',          // put index.html directly in /dist
+    outDir: '../dist',
     assetsDir: 'assets',
     emptyOutDir: true
   },

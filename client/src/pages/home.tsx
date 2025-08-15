@@ -758,7 +758,7 @@ export default function Home() {
               From vision to value — I build programs that deliver.
             </p>
             <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto">
-              My path spans software engineering, product/program management, and business strategy. At Micron’s Global Procurement COE I lead intelligent automation initiatives in the semiconductor supply chain; earlier at LTIMindtree I built test automation and reliability tooling for a leading omnichannel marketing tech client. I’m completing my MS in MIS at Texas A&M, and I love shipping practical, data-backed products that move organizations forward.
+              My path spans software engineering, product/program management, and business strategy. As a Program Manager Intern at Micron, I lead automation initiatives within the Global Procurement Center of Excellence, driving efficiency and innovation across procurement operations. Previously at LTIMindtree, I developed test automation frameworks and reliability tools for a major omnichannel marketing technology client, enhancing product quality and deployment efficiency. Currently pursuing an MS in Management Information Systems at Texas A&M, I’m passionate about building thoughtful, data-backed products that drive organizational growth and deliver measurable impact.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
