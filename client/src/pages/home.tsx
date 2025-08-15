@@ -603,178 +603,178 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-200 transition-all duration-300">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-4">
-            <div className="text-xl font-inter font-bold text-navy">
-              Pooja Suresh's Portfolio
-            </div>
+      <nav className="fixed top-0 left-0 right-0 h-16 md:h-20 bg-white/90 backdrop-blur-md z-50 border-b border-gray-200 transition-all duration-300">        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between items-center py-4">
+          <div className="text-xl font-inter font-bold text-navy">
+            Pooja Suresh's Portfolio
+          </div>
 
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex space-x-8">
+          {/* Desktop Navigation */}
+          <div className="hidden md:flex space-x-8">
+            <a
+              href="#home"
+              className="text-warm-gray hover:text-soft-blue transition-colors"
+              data-testid="nav-home"
+            >
+              Home
+            </a>
+            <a
+              href="#education"
+              className="text-warm-gray hover:text-soft-blue transition-colors"
+              data-testid="nav-education"
+            >
+              Education
+            </a>
+            <a
+              href="#experience"
+              className="text-warm-gray hover:text-soft-blue transition-colors"
+              data-testid="nav-experience"
+            >
+              Experience
+            </a>
+            <a
+              href="#projects"
+              className="text-warm-gray hover:text-soft-blue transition-colors"
+              data-testid="nav-projects"
+            >
+              Projects
+            </a>
+            <a
+              href="#skills"
+              className="text-warm-gray hover:text-soft-blue transition-colors"
+              data-testid="nav-skills"
+            >
+              Skills
+            </a>
+            <a
+              href="#interests"
+              className="text-warm-gray hover:text-soft-blue transition-colors"
+              data-testid="nav-interests"
+            >
+              Interests
+            </a>
+            <a
+              href="#contact"
+              className="text-warm-gray hover:text-soft-blue transition-colors"
+              data-testid="nav-contact"
+            >
+              Contact
+            </a>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            className="md:hidden text-navy"
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            data-testid="button-mobile-menu"
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-6 h-6" />
+            ) : (
+              <Menu className="w-6 h-6" />
+            )}
+          </button>
+        </div>
+
+        {/* Mobile Navigation */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden py-4 border-t border-gray-200">
+            <div className="flex flex-col space-y-4">
               <a
                 href="#home"
                 className="text-warm-gray hover:text-soft-blue transition-colors"
-                data-testid="nav-home"
+                data-testid="nav-mobile-home"
               >
                 Home
               </a>
               <a
                 href="#education"
                 className="text-warm-gray hover:text-soft-blue transition-colors"
-                data-testid="nav-education"
+                data-testid="nav-mobile-education"
               >
                 Education
               </a>
               <a
                 href="#experience"
                 className="text-warm-gray hover:text-soft-blue transition-colors"
-                data-testid="nav-experience"
+                data-testid="nav-mobile-experience"
               >
                 Experience
               </a>
               <a
                 href="#projects"
                 className="text-warm-gray hover:text-soft-blue transition-colors"
-                data-testid="nav-projects"
+                data-testid="nav-mobile-projects"
               >
                 Projects
               </a>
               <a
                 href="#skills"
                 className="text-warm-gray hover:text-soft-blue transition-colors"
-                data-testid="nav-skills"
+                data-testid="nav-mobile-skills"
               >
                 Skills
               </a>
               <a
                 href="#interests"
                 className="text-warm-gray hover:text-soft-blue transition-colors"
-                data-testid="nav-interests"
+                data-testid="nav-mobile-interests"
               >
                 Interests
               </a>
               <a
                 href="#contact"
                 className="text-warm-gray hover:text-soft-blue transition-colors"
-                data-testid="nav-contact"
+                data-testid="nav-mobile-contact"
               >
                 Contact
               </a>
             </div>
-
-            {/* Mobile Menu Button */}
-            <button
-              className="md:hidden text-navy"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              data-testid="button-mobile-menu"
-            >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
-            </button>
           </div>
-
-          {/* Mobile Navigation */}
-          {isMobileMenuOpen && (
-            <div className="md:hidden py-4 border-t border-gray-200">
-              <div className="flex flex-col space-y-4">
-                <a
-                  href="#home"
-                  className="text-warm-gray hover:text-soft-blue transition-colors"
-                  data-testid="nav-mobile-home"
-                >
-                  Home
-                </a>
-                <a
-                  href="#education"
-                  className="text-warm-gray hover:text-soft-blue transition-colors"
-                  data-testid="nav-mobile-education"
-                >
-                  Education
-                </a>
-                <a
-                  href="#experience"
-                  className="text-warm-gray hover:text-soft-blue transition-colors"
-                  data-testid="nav-mobile-experience"
-                >
-                  Experience
-                </a>
-                <a
-                  href="#projects"
-                  className="text-warm-gray hover:text-soft-blue transition-colors"
-                  data-testid="nav-mobile-projects"
-                >
-                  Projects
-                </a>
-                <a
-                  href="#skills"
-                  className="text-warm-gray hover:text-soft-blue transition-colors"
-                  data-testid="nav-mobile-skills"
-                >
-                  Skills
-                </a>
-                <a
-                  href="#interests"
-                  className="text-warm-gray hover:text-soft-blue transition-colors"
-                  data-testid="nav-mobile-interests"
-                >
-                  Interests
-                </a>
-                <a
-                  href="#contact"
-                  className="text-warm-gray hover:text-soft-blue transition-colors"
-                  data-testid="nav-mobile-contact"
-                >
-                  Contact
-                </a>
-              </div>
-            </div>
-          )}
-        </div>
+        )}
+      </div>
       </nav>
-
+      <div className="h-16 md:h-20" aria-hidden="true" />
       {/* Hero Section */}
       <section
         id="home"
-        className="gradient-bg min-h-screen flex items-center justify-center relative overflow-hidden"
+        className="scroll-mt-24 md:scroll-mt-28 gradient-bg min-h-[70vh] relative overflow-hidden py-12 md:py-16"
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-navy/20 via-soft-blue/10 to-transparent"></div>
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <div className="animate-fadeIn">
-            <img
-              src="https://media.licdn.com/dms/image/v2/D5603AQGl8_CkvubZMQ/profile-displayphoto-crop_800_800/B56ZhtbyCrH0AQ-/0/1754182658173?e=1758153600&v=beta&t=pl8zujEhanFhE81XTH_z7VRqnmc3qE_95NCXe9g9Dz4"
-              alt="Pooja Suresh professional headshot"
-              className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-white/20 shadow-xl object-cover"
-              data-testid="img-hero-profile"
-            />
+        <div className="absolute inset-0 bg-gradient-to-br from-navy/20 via-soft-blue/10 to-transparent pointer-events-none -z-10" />
 
-            <h1 className="text-5xl md:text-7xl font-inter font-bold text-white mb-6">
-              Hello, I'm <span className="gradient-text">Pooja</span>
-            </h1>
-            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
-              From vision to value — I build programs that deliver.
-            </p>
-            <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto">
-              My path spans software engineering, product/program management, and business strategy. As a Program Manager Intern at Micron, I lead automation initiatives within the Global Procurement Center of Excellence, driving efficiency and innovation across procurement operations. Previously at LTIMindtree, I developed test automation frameworks and reliability tools for a major omnichannel marketing technology client, enhancing product quality and deployment efficiency. Currently pursuing an MS in Management Information Systems at Texas A&M, I’m passionate about building thoughtful, data-backed products that drive organizational growth and deliver measurable impact.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="#projects"
-                className="bg-gold hover:bg-gold/90 text-navy px-8 py-4 rounded-lg font-semibold transition-colors"
-                data-testid="button-view-work"
-              >
-                View My Work
-              </a>
-              <a
-                href="#contact"
-                className="border border-white text-white hover:bg-white hover:text-navy px-8 py-4 rounded-lg font-semibold transition-all"
-                data-testid="button-get-in-touch"
-              >
-                Get In Touch
-              </a>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+          {/* ⬇️ items-center vertically centers both columns */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
+            {/* LEFT: heading → image → buttons (unchanged) */}
+            <div className="flex flex-col items-start gap-6">
+              <h1 className="text-3xl md:text-5xl lg:text-6xl font-inter font-bold text-white leading-tight">
+                Hello, I'm <span className="gradient-text">Pooja</span>
+              </h1>
+
+              <img
+                src="https://media.licdn.com/dms/image/v2/D5603AQGl8_CkvubZMQ/profile-displayphoto-crop_800_800/B56ZhtbyCrH0AQ-/0/1754182658173?e=1758153600&v=beta&t=pl8zujEhanFhE81XTH_z7VRqnmc3qE_95NCXe9g9Dz4"
+                alt="Pooja Suresh professional headshot"
+                className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full border-4 border-white/20 shadow-xl object-cover"
+              />
+
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="#projects" className="bg-gold hover:bg-gold/90 text-navy px-8 py-4 rounded-lg font-semibold transition-colors">
+                  View My Work
+                </a>
+                <a href="#contact" className="border border-white text-white hover:bg-white hover:text-navy px-8 py-4 rounded-lg font-semibold transition-all">
+                  Get In Touch
+                </a>
+              </div>
+            </div>
+
+            {/* RIGHT: centered vertically & horizontally */}
+            <div className="self-center text-center text-white/90 space-y-6 max-w-xl mx-auto">
+              <p className="text-lg md:text-xl">
+                From vision to value — I build programs that deliver.
+              </p>
+              <p className="text-base md:text-lg text-white/80">
+                My path spans software engineering, product/program management, and business strategy. As a Program Manager Intern at Micron, I lead automation initiatives within the Global Procurement Center of Excellence, driving efficiency and innovation across procurement operations. Previously at LTIMindtree, I developed test automation frameworks and reliability tools for a major omnichannel marketing technology client, enhancing product quality and deployment efficiency. Currently pursuing an MS in Management Information Systems at Texas A&M, I’m passionate about building thoughtful, data-backed products that drive organizational growth and deliver measurable impact.
+              </p>
             </div>
           </div>
         </div>
@@ -901,8 +901,8 @@ export default function Home() {
                       </div>
                       <div
                         className={`w-3 h-3 rounded-full ${work.type === "current"
-                            ? "bg-green-500"
-                            : "bg-gray-400"
+                          ? "bg-green-500"
+                          : "bg-gray-400"
                           }`}
                       ></div>
                     </div>
@@ -1045,8 +1045,8 @@ export default function Home() {
                   key={index}
                   onClick={() => setCurrentProjectIndex(index)}
                   className={`w-3 h-3 rounded-full transition-all ${index === currentProjectIndex
-                      ? "bg-white scale-110 shadow-lg"
-                      : "bg-white/50 hover:bg-white/70"
+                    ? "bg-white scale-110 shadow-lg"
+                    : "bg-white/50 hover:bg-white/70"
                     }`}
                   data-testid={`dot-project-${index}`}
                 />
@@ -1141,61 +1141,57 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section
-        id="contact"
-        className="py-20 bg-white opacity-0 translate-y-5 transition-all duration-700"
-      >
+      <section id="contact" className="py-20 bg-white opacity-0 translate-y-5 transition-all duration-700">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-inter font-bold text-navy mb-6">
-              Let's Connect
-            </h2>
+            <h2 className="text-4xl md:text-5xl font-inter font-bold text-navy mb-6">Let's Connect</h2>
             <p className="text-xl text-warm-gray max-w-2xl mx-auto">
-              Ready to collaborate on your next big initiative? Let's discuss
-              how we can drive meaningful impact together.
+              Ready to collaborate on your next big initiative? Let's discuss how we can drive meaningful impact together.
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
+          {/* ⬇️ One column, center the item */}
+          <div className="grid grid-cols-1 gap-12 place-items-center">
+            {/* ⬇️ Constrain width + center text */}
+            <div className="w-full max-w-md text-center">
               <div className="space-y-6">
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-soft-blue rounded-xl flex items-center justify-center">
-                    <Mail className="text-white w-5 h-5" />
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="font-inter font-semibold text-navy">
-                      Email
-                    </h3>
+                {/* Email row */}
+                <div className="space-y-8">
+                  {/* Email (icon above text) */}
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <div className="w-12 h-12 bg-soft-blue rounded-xl flex items-center justify-center">
+                      <Mail className="text-white w-5 h-5" />
+                    </div>
+                    <h3 className="font-inter font-semibold text-navy">Email</h3>
                     <p className="text-warm-gray">pooja.adi2309@gmail.com</p>
                   </div>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gold rounded-xl flex items-center justify-center">
-                    <Linkedin className="text-white w-5 h-5" />
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="font-inter font-semibold text-navy">
-                      LinkedIn
-                    </h3>
+
+                  {/* LinkedIn (icon above text) */}
+                  <div className="flex flex-col items-center text-center gap-2">
+                    <div className="w-12 h-12 bg-gold rounded-xl flex items-center justify-center">
+                      <Linkedin className="text-white w-5 h-5" />
+                    </div>
+                    <h3 className="font-inter font-semibold text-navy">LinkedIn</h3>
                     <p className="text-warm-gray">
                       <a
                         href="https://www.linkedin.com/in/pooja-suresh-79a6b2165/"
+                        target="_blank"
                         rel="noopener noreferrer"
-                        className="text-current hover:underline"
+                        className="hover:underline"
                       >
                         linkedin.com/in/pooja-suresh
                       </a>
                     </p>
                   </div>
                 </div>
+
+
               </div>
 
+              {/* Center the footer note */}
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <p className="text-warm-gray text-sm leading-relaxed">
-                  <strong className="text-navy">Open to:</strong> opportunities
-                  in Program Management, Product, Project Management, and
-                  Digital Transformation.
+                  <strong className="text-navy">Open to</strong> opportunities in Product, Project & Program Management.
                 </p>
               </div>
             </div>
