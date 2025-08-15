@@ -24,9 +24,11 @@ export default defineConfig({
     },
   },
   root: path.resolve(import.meta.dirname, "client"),
+  base: '/',                 // IMPORTANT for Vercel domain root
   build: {
-    outDir: path.resolve(import.meta.dirname, "dist/public"),
-    emptyOutDir: true,
+    outDir: 'dist',          // put index.html directly in /dist
+    assetsDir: 'assets',
+    emptyOutDir: true
   },
   server: {
     fs: {
