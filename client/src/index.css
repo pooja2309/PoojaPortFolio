@@ -112,6 +112,7 @@
   --warm-gray: hsl(217 10% 65%);
   --soft-blue: hsl(213 47% 70%);
   --gold: hsl(38 85% 70%);
+  --gold-dark: hsl(38 85% 42%);
 }
 
 @layer base {
@@ -191,7 +192,7 @@
   }
 
   .gradient-text {
-    background: linear-gradient(135deg, var(--soft-blue), var(--gold));
+    background: linear-gradient(135deg, var(--gold), var(--gold));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

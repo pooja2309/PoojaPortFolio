@@ -51,6 +51,8 @@ import {
   ChevronRight,
   Plus,
   ExternalLink,
+  Paintbrush,
+  PaintRoller,
 } from "lucide-react";
 
 export default function Home() {
@@ -160,7 +162,7 @@ export default function Home() {
       skills: [
         {
           icon: Brain,
-          name: "Machine Learning",
+          name: "Gen AI + CoPilot",
           color: "from-soft-blue/10 to-gold/10 border-soft-blue/20",
         },
         {
@@ -185,22 +187,22 @@ export default function Home() {
       skills: [
         {
           icon: Code,
-          name: "Figma",
+          name: "Visual Studio, IntelliJ, Eclise IDE",
           color: "from-purple-100 to-pink-100 border-purple-200",
         },
         {
           icon: Building,
-          name: "Jira",
+          name: "Jira, Target Process, Asana, Confluence",
           color: "from-blue-100 to-indigo-100 border-blue-200",
         },
         {
           icon: ChartPie,
-          name: "SQL",
+          name: "SQL, MongoDB, PowerBI, Snowflake DB",
           color: "from-orange-100 to-red-100 border-orange-200",
         },
         {
           icon: Code,
-          name: "Python",
+          name: "Python, Javascript, Java",
           color: "from-green-100 to-teal-100 border-green-200",
         },
       ],
@@ -220,7 +222,7 @@ export default function Home() {
         },
         {
           icon: Globe,
-          name: "Global Operations",
+          name: "Global Procurement & Operations",
           color: "from-soft-blue/10 to-cyan-100 border-soft-blue/20",
         },
         {
@@ -235,7 +237,7 @@ export default function Home() {
       skills: [
         {
           icon: CheckSquare,
-          name: "Agile/Scrum",
+          name: "Agile/Scrum Methodologies",
           color: "from-emerald-100 to-green-100 border-emerald-200",
         },
         {
@@ -250,7 +252,7 @@ export default function Home() {
         },
         {
           icon: Calculator,
-          name: "Budget Planning",
+          name: "Resource Allocation & Budgeting",
           color: "from-yellow-100 to-gold/10 border-yellow-200",
         },
       ],
@@ -269,10 +271,13 @@ export default function Home() {
       image:
         "https://www.tamu.edu/_files/images/admissions/aerial-tamu-water-tower-sunset.JPG",
       tags: [
-        "Strategic Leadership",
-        "Digital Innovation",
-        "Product Management",
-        "Data Analytics",
+        "Project Management",
+        "Advanced Data Management",
+        "System Analysis & Design",
+        "Corporate Information Planning",
+        "Business Information Security",
+        "Predictive Analytics for Business",
+        "Survey of Management"
       ],
       type: "degree",
     },
@@ -284,7 +289,7 @@ export default function Home() {
       description:
         "Strong foundation in software engineering, data structures, and algorithms. Capstone project focused on machine learning applications in business processes.",
       image:
-        "https://data.testprepkart.com/university/Nitte_Meenakshi_Institute_of_Technology_testprepkart_61c1a39200d28.png",
+        "https://lh3.googleusercontent.com/p/AF1QipOWQSMvHGQtCR_jERiJgyp5tzwaF8XnJMCpTPXT=s1360-w1360-h1020-rw",
       tags: [
         "Software Engineering",
         "Machine Learning",
@@ -294,47 +299,34 @@ export default function Home() {
       type: "degree",
     },
     {
-      id: 3,
-      title: "AI & Machine Learning Specialization",
-      institution: "Google Cloud Platform",
-      year: "2023",
-      description:
-        "Comprehensive training in cloud-based AI solutions and enterprise machine learning deployment. Focus on scalable AI architecture and MLOps practices.",
+      id: 2,
+      title: "Certifications",
+      institution: "Program / Project & Product Management",
+
       image:
-        "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-      tags: ["AI/ML", "Cloud Computing", "MLOps", "Enterprise Architecture"],
-      type: "certification",
-    },
-    {
-      id: 4,
-      title: "Data Science for Business Leaders",
-      institution: "MIT Sloan Executive Education",
-      year: "2022",
-      description:
-        "Executive program focused on leveraging data science for strategic business decisions. Emphasis on data-driven transformation and analytics leadership.",
-      image:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+        "https://content.wolfram.com/sites/39/2021/02/wolfram-u-certifications.png",
       tags: [
-        "Data Science",
-        "Business Strategy",
-        "Analytics",
-        "Executive Leadership",
+        "Google Project Management",
+        "Certified Scrum Master",
+        "AI for Product Managers",
+        "ISTQB",
+        "and more..",
       ],
-      type: "executive",
-    }
+      type: "degree",
+    },
   ];
 
   // Work Experience data
   const workExperienceData = [
     {
       id: 1,
-      title: "Program Manager - AI & Digital Transformation",
+      title: "Program Manager Intern - AI & Digital Transformation",
       company: "Micron Technology",
       period: "May 2025 - Present",
       description:
         "Leading AI & Digital Transformation initiatives that enhance global procurement processes. Managing cross-functional teams to deliver enterprise-scale automation solutions.",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw61divHtbUlLVp43pq2knONUWn1FB6AmX7A&s",
+        "https://dmassets.micron.com/is/image/microntechnology/adobestock-609624221-1?ts=1738621994376&dpr=off",
       tags: [
         "Program Management",
         "AI/ML",
@@ -343,28 +335,36 @@ export default function Home() {
       ],
       type: "current",
     },
+
     {
       id: 2,
-      title: "Associate Program Manager",
-      company: "LTIMindtree",
-      period: "2022 - 2024",
+      title: "Teaching Assistant & Grader",
+      company: "Mays Business School - Flex MBA",
+      period: "2025-Present",
       description:
-        "Led development and deployment of AI-powered enterprise solutions. Managed cross-functional teams delivering scalable products that enhanced operational efficiency by 40%.",
+        "Supported instruction & evaluation for graduate-level courses: SCMT 610 – Business Analytics and MGMT 638 – Strategic Entrepreneurship. Assisted with course delivery, grading assignments and exams, providing feedback to students, and facilitating academic support to enhance learning outcomes.",
       image:
-        "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-      tags: ["Enterprise Solutions", "Team Leadership", "Agile", "Product Development"],
+        "https://news.mays.tamu.edu/wp-content/uploads/2025/01/2020242_N51-1024x652.jpg",
+      tags: ["Business Analysis", "Teaching", "Grading", "Project Planning"],
       type: "previous",
     },
+
     {
       id: 3,
       title: "Software Engineer",
-      company: "Tech Solutions Inc.",
-      period: "2021 - 2022",
+      company: "LTIMindtree",
+      period: "2021 - 2024",
       description:
-        "Developed robust software solutions with focus on user-centric design and scalable architecture. Built foundation in technical skills that inform current program management approach.",
+        "Contributed to quality assurance efforts for a marketing client in the Media & Entertainment sector, focusing on automating test suites using Cypress, WebdriverIO, and Protractor. Skilled in leveraging testing frameworks such as Mocha, Jasmine, Cucumber, and JUnit, with expertise in Java and JavaScript to drive efficient test automation and deliver thorough quality evaluations.",
       image:
-        "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
-      tags: ["Software Development", "Full-Stack", "User Experience", "Architecture"],
+        "https://omdia.tech.informa.com/-/media/tech/omdia/omdia-website-enhancement-oct-2023/media-and-entertainment-coverage.jpg?rev=d0cd11b816ca4ae5a4c8197210e42bf9",
+      tags: [
+        "Automation",
+        "Software Development",
+        "Agile Project Management",
+        "Stakeholder Engagement",
+        "Quality Assurance",
+      ],
       type: "previous",
     },
   ];
@@ -373,42 +373,193 @@ export default function Home() {
   const projectsData = [
     {
       id: 1,
-      title: "Enterprise AI Platform",
-      company: "LTIMindtree",
-      description: "Led the development and deployment of AI-powered enterprise solutions, managing cross-functional teams and delivering scalable products that enhanced operational efficiency by 40%.",
-      image: "https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      tags: ["AI/ML", "Enterprise", "Program Management", "Digital Transformation"],
-      impact: "40% efficiency improvement",
+      link: "https://docs.google.com/presentation/d/1A-Tu1BjCzNYnMJtxdG_280JBT6EBrDgG/edit?usp=drive_link&ouid=110348758768572062782&rtpof=true&sd=true",
+      title: "Predictive Modeling of Diabetes Risk using Health Indicators",
+      company: "Predictive Analytics for Business",
+      description:
+        "Utilized publicly available health data to build predictive models assessing individual risk for diabetes. This project leveraged the 2015 Behavioral Risk Factor Surveillance System (BRFSS) dataset from the CDC to explore health indicators and develop early detection tools. ",
+      image:
+        "https://cdn.analyticsvidhya.com/wp-content/uploads/2022/01/Diabetes-Prediction-Using-Machine-Learning.webp",
+      tags: [
+        "Data Preparation",
+        "Data Exploration",
+        "Model Development",
+        "Machine Learning",
+        "Feature Importance Analysis",
+        "Linear Regression",
+        "Logistic Regression",
+        "KNN",
+        "Decision Trees",
+        "SVM",
+      ],
+      impact: "R, R Studio, Kaggle, Tableau",
+    },
+    {
+      id: 1,
+      link: "https://drive.google.com/file/d/11GX73FO7IZpSuv9dtR-KQjJ97xPGBco0/view?usp=drive_link",
+      title: "Amazon Haul - Market Research & Product Strategy",
+      company: "Corporate Information Planning",
+      description:
+        "Developed a strategic product roadmap for Amazon SkyHaul, a conceptual logistics and delivery enhancement initiative aimed at redefining last-mile efficiency and customer experience. The project integrated emerging technologies with market insights to shape a scalable, innovation-driven solution.",
+      image:
+        "https://image.cnbcfm.com/api/v1/image/108078551-1734649503100-site_Haul_Thumbnail.png?v=1734649575",
+      tags: [
+        "MVP",
+        "Product Strategy",
+        "Market Research",
+        "Competitor Analysis",
+        "Business Model Canvas",
+        "Phased Tech Roadmap",
+        "Revenue Modeling",
+        "Strategic Partnerships",
+        "Market Positioning",
+        "Visual Strategy Assets"
+      ],
+      impact: "Canva, Figma, GenAI, Microsoft 365",
     },
     {
       id: 2,
-      title: "Global Procurement Automation",
-      company: "Micron Technology",
-      description: "Designed and implemented strategic planning initiatives for global procurement automation, resulting in streamlined operations and significant cost savings across multiple regions.",
-      image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      tags: ["Strategic Planning", "Automation", "Global Operations", "Cost Optimization"],
-      impact: "25% cost reduction",
+      link: "https://drive.google.com/drive/folders/1XV9wfXHVvWxLNkQUb--_l1I0J1uPwMhL?usp=drive_link",
+      title: "AR System Implementation at Artemis Logistics",
+      company: "Project Management & Implementation",
+      description:
+        "Led the development of comprehensive project management documentation for a case study focused on implementing an Augmented Reality (AR) system at Artemis Logistics. The project aimed to enhance warehouse operations and inventory tracking through immersive, real-time data visualization.",
+      image:
+        "https://www.falconfulfillment.com/wp-content/uploads/2023/03/ff_logistics_001_misc_1920x1280.jpg",
+      tags: [
+        "Project Planning",
+        "Budgeting",
+        "Risk Management",
+        "Resource Allocation",
+        "GANTT Chart",
+        "Work Breakdown Structure",
+        "RACI Matrix",
+        "PERT Chart"
+      ],
+      impact: "Figma, MS Project, Excel, LucidChart",
     },
     {
-      id: 3,
-      title: "Digital Banking Solutions",
-      company: "Banking Innovation Lab",
-      description: "Built scalable financial tools with focus on regulatory compliance and digital banking innovations. Delivered comprehensive product strategy and user experience improvements.",
-      image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-      tags: ["Fintech", "Digital Banking", "Compliance", "Product Strategy"],
-      impact: "300% user engagement",
+      id: 2,
+      link: "https://drive.google.com/file/d/1n4_na2NXBXLqf-6zrYt_aBjmvxKx8tdO/view?usp=drive_link",
+      title: "DeliverEase - Product Canvas",
+      company: "System Analysis & Design",
+      description:
+        "Deliver Ease is a food delivery app that integrates major platforms like UberEats & GrubHub into a single interface. Mission is to optimize user experience by enabling real-time cost comparison, reducing wait times, and streamlining order tracking. The strategy focuses on enhancing customer satisfaction through predictive delivery insights, and personalized recommendations.",
+      image:
+        "https://tahinis.com/cdn/shop/articles/food_delivery.png?v=1653305107",
+      tags: [
+        "Product Market Fit Analysis",
+        "User Personas",
+        "Wireframing",
+        "Pain Points Analysis",
+        "UI / UX Design",
+        "Features",
+        "User Stories",
+        "Points Estimation",
+        "Roadmap",
+        "Sprint Planning",
+      ],
+      impact: "Canva, LucidChart, Visio",
+    },
+    {
+      id: 2,
+      link: "https://drive.google.com/file/d/1KY_XuLk6buagdVge8fqUnn2QW9B5bK1y/view?usp=sharing",
+      title: "Medallion Theater Booking System",
+      company: "Flowchart and UML Diagrams",
+      description:
+        "Led the design and analysis of the Medallion Theater Booking System, focusing on modeling user interactions, system behavior, and core functionalities. Conducted a comprehensive workflow analysis to understand the end-to-end booking process, including ticket selection, seat reservation, payment processing, and confirmation. This project demonstrated my ability to translate business requirements into clear, structured system models that support scalable and user-friendly application design.",
+      image:
+        "https://i.pinimg.com/originals/86/5a/f9/865af99a0389c5cf41753ee143c75ea6.jpg",
+      tags: [
+        "Work Flow Analysis",
+        "UML Diagrams",
+        "Sequence Diagrams",
+        " Class Diagram",
+        "Use Case Diagram",
+        "Flowcharts",
+        ""
+      ],
+      impact: "Canva, LucidChart, Visio",
+    },
+    {
+      id: 2,
+      link: "https://drive.google.com/file/d/14Nh6I_M8tFo8As6rjV4NnPbpkvQ3UiCQ/view?usp=drive_link",
+      title: "System Requirements Specification",
+      company: "Project Request Proposal",
+      description: "Acted as a systems analyst for a software consulting firm responding to a Request for Proposal (RFP) from *&* Publishing. Developed a comprehensive SRS document to serve as the SOW for the proposed solution. Successfully translated business needs into actionable technical documentation, ensuring alignment between client expectations and development execution.",
+      image:
+        "https://yuktisolutions.com/Content/Images/bigstock-Srs-Software-Requirements-Spec-395858375%20(1).jpg",
+      tags: [
+        "Project Charter",
+        "System Specifications",
+        "Request Proposal",
+        "Technical Specifications",
+        "Consulting Documentation",
+        "Project Specification",
+      ],
+      impact: "Atlassian Confluence, MS Word",
+    },
+    {
+      id: 2,
+      title: "Point of Sale Migration & Optimization",
+      company: "Data Management & Migration",
+      description:
+        "Enhanced a POS system by migrating data to a NoSQL database and implementing ETL processes using AWS EC2 and MariaDB, significantly improving scalability and query performance. Leveraged EC2 instances to manage data replication, sharding, backup automation, and high availability configurations, ensuring robust and efficient data handling across distributed environments.",
+      image:
+        "https://academy.invictus-ir.com/content-assets/public/eyJhbGciOiJIUzI1NiJ9.eyJvYmplY3Rfa2V5IjoiNTV3cDI0YWV6YnlzdWlmcjdia2Y3dHZvNTh6bCIsImRvbWFpbiI6ImFjYWRlbXkuaW52aWN0dXMtaXIuY29tIn0.DKgFrTwIh9UYw9GE34WA_ssHfPnzI-mhls6US7VLN3Q",
+      tags: ["Data Management", "ETL", "Migration", "Replication", "Sharding", "Infrastructure Optimization", "Performance Gains", "High-Volume Transactional Environment"],
+      impact: "SQL, MongoDB, AWC EC2 Instances",
+    },
+
+    {
+      id: 2,
+      title: "Penetration Testing & Risk Management in Healthcare",
+      company: "Business Information Security",
+      description:
+        "Deployed Kali Linux and Metasploitable2 for penetration testing; leveraged tools such as Nmap, Unicornscan, for port scanning and OS fingerprinting. Additionally, performed CVE-based vulnerability assessments, PGP email encryption, and HIPAA-aligned risk evaluation of a healthcare system.",
+      image:
+        "https://news-cdn.softpedia.com/images/news2/kali-linux-2016-2-released-as-the-most-advanced-penetration-testing-distribution-507816-4.jpg",
+      tags: [
+        "Penetration Testing",
+        "Vulnerability Assessment",
+        "Risk Analysis",
+        "IT Risk Management Management",
+        "Secure Communication",
+        "Manage IT Risks",
+        "HIPAA Frameworks",
+        "CVE-based analysis"
+      ],
+      impact: "Kali, Metasploitable, NMAP",
+    },
+    {
+      id: 1,
+      title: "Publication: Social Distancing and Face Mask Detection using Deep Learning Model",
+      company: "https://ieeexplore.ieee.org/abstract/document/9544890",
+      link: "https://d1wqtxts1xzle7.cloudfront.net/108019684/45_1570753865_28577_EMr_15Jul22_16aug21_Ff-libre.pdf?1701250233=&response-content-disposition=inline%3B+filename%3DSocial_distance_and_face_mask_detector_s.pdf&Expires=1752559866&Signature=RVSn1IcgTt~g-sgS3GopgCArqKlgCov85PYO0lFSLscOialAbXkH2elhoMZtUFTRdXdAmmkXRrJR3CbT6UP04miEJd0Eo6Hm7P~2capKdLC4pIpr-C9ouAwswsA0UxNrRG7ViWt1k~Gkc3Zj2Izk8C3MMlURV1hA7MBM-ya~toB8Y1YyobBcRYSQTwrZBja10BUzpGaHodeP-zs-wiQhd~S0DKrIEq8eRKqH8pJg8N6R3ZEesgJSjvCj2uGTiBImW4gZVl~IeSnLFjnSLjqASmt6uWoDeQd31WJ58qHMqHu~8t2WGSSoNQ9L2XIP11WaX4hYNi-gLLLyI6f1kx2yEw__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA",
+      description:
+        "Developed a Social Distancing and Face Mask Detection system using MobileNet V2 for mask detection and YOLOv4 for distance computation, achieving 99% accuracy with a dataset of over 4,000 images, trained on Google Colab. The research paper is published on IJECE, a scopus indexed Q2 Journal.",
+      image:
+        "https://www.nasddds.org/wp-content/smush-webp/2020/03/Coronavirus-COVID-19.jpg.webp",
+      tags: [
+        "MobileNetV2",
+        "CNN",
+        "YOLOv4",
+        "Scopus Indexed Q2 Journal",
+        "Research Paper IEEE"
+      ],
+      impact: "Final Year Project: 2020-21",
     },
   ];
 
   const nextProjectSlide = () => {
-    setCurrentProjectIndex((prev) => 
-      prev === projectsData.length - 1 ? 0 : prev + 1
+    setCurrentProjectIndex((prev) =>
+      prev === projectsData.length - 1 ? 0 : prev + 1,
     );
   };
 
   const prevProjectSlide = () => {
-    setCurrentProjectIndex((prev) => 
-      prev === 0 ? projectsData.length - 1 : prev - 1
+    setCurrentProjectIndex((prev) =>
+      prev === 0 ? projectsData.length - 1 : prev - 1,
     );
   };
 
@@ -429,30 +580,22 @@ export default function Home() {
     },
     {
       icon: Users,
-      title: "Mentorship",
+      title: "Mentorship & Volunteering",
       description:
         "Actively mentoring young professionals and contributing to diversity initiatives in technology and business.",
       color: "from-navy to-soft-blue",
     },
     {
-      icon: Camera,
-      title: "Photography",
-      description:
-        "Capturing moments and stories through the lens, with a particular interest in architectural and nature photography.",
-      color: "from-purple-500 to-pink-500",
-    },
-    {
       icon: Mountain,
-      title: "Travel & Culture",
-      description:
-        "Exploring diverse cultures and landscapes, always seeking new perspectives that enrich both personal and professional growth.",
+      title: "Hiking",
+      description: "Exploring nature through hiking and trail activities.",
       color: "from-green-500 to-teal-500",
     },
     {
-      icon: UtensilsCrossed,
-      title: "Culinary Arts",
+      icon: PaintRoller,
+      title: "Art & Design",
       description:
-        "Experimenting with global cuisines and discovering how food brings people together across cultures and communities.",
+        "Creating visually engaging and functional designs, blending creativity with usability principles in UI/UX projects.",
       color: "from-orange-500 to-red-500",
     },
   ];
@@ -464,7 +607,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="text-xl font-inter font-bold text-navy">
-              Pooja Suresh
+              Pooja Suresh's Portfolio
             </div>
 
             {/* Desktop Navigation */}
@@ -602,7 +745,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <div className="animate-fadeIn">
             <img
-              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=200&h=200"
+              src="https://media.licdn.com/dms/image/v2/D5603AQGl8_CkvubZMQ/profile-displayphoto-crop_800_800/B56ZhtbyCrH0AQ-/0/1754182658173?e=1758153600&v=beta&t=pl8zujEhanFhE81XTH_z7VRqnmc3qE_95NCXe9g9Dz4"
               alt="Pooja Suresh professional headshot"
               className="w-32 h-32 rounded-full mx-auto mb-8 border-4 border-white/20 shadow-xl object-cover"
               data-testid="img-hero-profile"
@@ -612,13 +755,10 @@ export default function Home() {
               Hello, I'm <span className="gradient-text">Pooja</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-4xl mx-auto leading-relaxed">
-              I build or help build — products, plans, and purpose-driven
-              progress.
+              From vision to value — I build programs that deliver.
             </p>
             <p className="text-lg text-white/80 mb-12 max-w-2xl mx-auto">
-              Program Manager passionate about AI & Digital Transformation,
-              bridging the gap between innovative technology and strategic
-              business outcomes.
+              My path spans software engineering, product/program management, and business strategy. At Micron’s Global Procurement COE I lead intelligent automation initiatives in the semiconductor supply chain; earlier at LTIMindtree I built test automation and reliability tooling for a leading omnichannel marketing tech client. I’m completing my MS in MIS at Texas A&M, and I love shipping practical, data-backed products that move organizations forward.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -651,23 +791,21 @@ export default function Home() {
               Education
             </h2>
             <p className="text-xl text-warm-gray max-w-3xl mx-auto">
-              Academic foundation and continuous learning through degrees, certifications, and executive education.
+              Academic foundation and continuous learning through degrees &
+              certifications.
             </p>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8">
             {educationData.map((edu) => (
-              <Card key={edu.id} className="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
-                <div className="md:flex">
-                  <div className="md:w-1/3">
-                    <img
-                      src={edu.image}
-                      alt={`${edu.institution} campus or related imagery`}
-                      className="w-full h-48 md:h-full object-cover"
-                      data-testid={`img-education-${edu.id}`}
-                    />
-                  </div>
-                  <div className="md:w-2/3 p-6">
+              <Card
+                key={edu.id}
+                className="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200"
+              >
+                {/* Text left, image right on md+; stacked on mobile */}
+                <div className="grid grid-cols-1 md:grid-cols-[1fr_360px]">
+                  {/* LEFT: text/content */}
+                  <div className="p-6">
                     <div className="flex items-center mb-4">
                       <div className="w-12 h-12 bg-gradient-to-br from-soft-blue to-gold rounded-xl flex items-center justify-center">
                         {edu.type === "degree" ? (
@@ -677,36 +815,41 @@ export default function Home() {
                         )}
                       </div>
                       <div className="ml-4 flex-1">
-                        <h3 className="text-lg font-inter font-bold text-navy">
-                          {edu.title}
-                        </h3>
-                        <p className="text-soft-blue font-semibold text-sm">
-                          {edu.institution}
-                        </p>
+                        <h3 className="text-lg font-inter font-bold text-navy">{edu.title}</h3>
+                        <p className="text-soft-blue font-semibold text-sm">{edu.institution}</p>
                       </div>
                       <span className="bg-gold/10 text-gold px-3 py-1 rounded-full text-sm font-semibold">
                         {edu.year}
                       </span>
                     </div>
 
-                    <p className="text-warm-gray leading-relaxed mb-4 text-sm">
-                      {edu.description}
-                    </p>
+                    <p className="text-warm-gray leading-relaxed mb-4 text-sm">{edu.description}</p>
 
                     <div className="flex flex-wrap gap-2">
-                      {edu.tags.map((tag, tagIndex) => (
+                      {edu.tags.map((tag, i) => (
                         <span
-                          key={tagIndex}
+                          key={i}
                           className="bg-navy/10 text-navy px-2 py-1 rounded-full text-xs skill-badge"
-                          data-testid={`tag-education-${edu.id}-${tagIndex}`}
+                          data-testid={`tag-education-${edu.id}-${i}`}
                         >
                           {tag}
                         </span>
                       ))}
                     </div>
                   </div>
+
+                  {/* RIGHT: image (fills the right column height) */}
+                  <div className="hidden md:block">
+                    <img
+                      src={edu.image}
+                      alt={`${edu.institution} campus or related imagery`}
+                      className="w-full h-full object-cover"
+                      data-testid={`img-education-${edu.id}`}
+                    />
+                  </div>
                 </div>
               </Card>
+
             ))}
           </div>
         </div>
@@ -723,13 +866,17 @@ export default function Home() {
               Work Experience
             </h2>
             <p className="text-xl text-warm-gray max-w-3xl mx-auto">
-              Professional journey from software engineering to program management, driving digital transformation and business impact.
+              Professional journey from software engineering to program
+              management, driving digital transformation and business impact.
             </p>
           </div>
 
           <div className="space-y-8">
             {workExperienceData.map((work) => (
-              <Card key={work.id} className="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200">
+              <Card
+                key={work.id}
+                className="card-hover bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-200"
+              >
                 <div className="md:flex">
                   <div className="md:w-1/4">
                     <img
@@ -752,12 +899,12 @@ export default function Home() {
                           {work.period}
                         </p>
                       </div>
-                      <div className={`w-3 h-3 rounded-full ${
-                        work.type === 'current' 
-                          ? 'bg-green-500' 
-                          : 'bg-gray-400'
-                      }`}>
-                      </div>
+                      <div
+                        className={`w-3 h-3 rounded-full ${work.type === "current"
+                            ? "bg-green-500"
+                            : "bg-gray-400"
+                          }`}
+                      ></div>
                     </div>
 
                     <p className="text-warm-gray leading-relaxed mb-6">
@@ -795,24 +942,27 @@ export default function Home() {
               Featured Projects
             </h2>
             <p className="text-xl text-white/90 max-w-3xl mx-auto">
-              Showcasing impactful products and strategic initiatives that drive business transformation and innovation.
+              Showcasing impactful products and strategic initiatives that drive
+              business transformation and innovation.
             </p>
           </div>
 
           {/* Projects Carousel */}
           <div className="relative mb-12">
             <div className="overflow-hidden rounded-2xl">
-              <div 
+              <div
                 className="flex transition-transform duration-500 ease-in-out"
-                style={{ transform: `translateX(-${currentProjectIndex * 100}%)` }}
+                style={{
+                  transform: `translateX(-${currentProjectIndex * 100}%)`,
+                }}
               >
                 {projectsData.map((project) => (
                   <div key={project.id} className="w-full flex-shrink-0">
                     <Card className="mx-4 education-card rounded-2xl shadow-2xl overflow-hidden border border-white/30 h-full backdrop-blur-sm">
                       <div className="md:flex">
                         <div className="md:w-2/5">
-                          <img 
-                            src={project.image} 
+                          <img
+                            src={project.image}
                             alt={`${project.title} project visualization`}
                             className="w-full h-64 md:h-full object-cover"
                             data-testid={`img-project-${project.id}`}
@@ -822,8 +972,23 @@ export default function Home() {
                           <div className="flex items-start justify-between mb-4">
                             <div>
                               <h3 className="text-3xl font-inter font-bold text-navy mb-3">
-                                {project.title}
+                                {project.link ? (
+                                  <a
+                                    href={project.link}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:underline focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-azure"
+                                    aria-label={`Open project: ${project.title}`}
+                                    data-testid={`link-project-${project.id}`}
+                                    title={project.title}
+                                  >
+                                    {project.title}
+                                  </a>
+                                ) : (
+                                  project.title
+                                )}
                               </h3>
+
                               <p className="text-soft-blue font-semibold text-lg mb-2">
                                 {project.company}
                               </p>
@@ -832,14 +997,14 @@ export default function Home() {
                               </div>
                             </div>
                           </div>
-                          
+
                           <p className="text-warm-gray leading-relaxed mb-6 text-lg">
                             {project.description}
                           </p>
-                          
+
                           <div className="flex flex-wrap gap-3">
                             {project.tags.map((tag, tagIndex) => (
-                              <span 
+                              <span
                                 key={tagIndex}
                                 className="bg-navy/10 text-navy px-4 py-2 rounded-full text-sm skill-badge font-medium"
                                 data-testid={`tag-project-${project.id}-${tagIndex}`}
@@ -864,7 +1029,7 @@ export default function Home() {
             >
               <ChevronLeft className="w-6 h-6 text-white" />
             </button>
-            
+
             <button
               onClick={nextProjectSlide}
               className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 glass-effect rounded-full p-3 shadow-lg hover:shadow-xl transition-all border border-white/30 hover:border-white/50"
@@ -879,11 +1044,10 @@ export default function Home() {
                 <button
                   key={index}
                   onClick={() => setCurrentProjectIndex(index)}
-                  className={`w-3 h-3 rounded-full transition-all ${
-                    index === currentProjectIndex 
-                      ? 'bg-white scale-110 shadow-lg' 
-                      : 'bg-white/50 hover:bg-white/70'
-                  }`}
+                  className={`w-3 h-3 rounded-full transition-all ${index === currentProjectIndex
+                      ? "bg-white scale-110 shadow-lg"
+                      : "bg-white/50 hover:bg-white/70"
+                    }`}
                   data-testid={`dot-project-${index}`}
                 />
               ))}
@@ -931,27 +1095,6 @@ export default function Home() {
                 </div>
               </div>
             ))}
-          </div>
-
-          {/* Technology Icons Section */}
-          <div className="mt-16 pt-16 border-t border-gray-200">
-            <h3 className="text-2xl font-inter font-semibold text-navy text-center mb-8">
-              Tools & Technologies
-            </h3>
-            <div className="flex flex-wrap justify-center items-center gap-8">
-              <div className="opacity-60 hover:opacity-100 transition-opacity flex items-center justify-center w-16 h-12 bg-gray-100 rounded-lg">
-                <Code className="w-8 h-8 text-gray-600" />
-              </div>
-              <div className="opacity-60 hover:opacity-100 transition-opacity flex items-center justify-center w-16 h-12 bg-gray-100 rounded-lg">
-                <Building className="w-8 h-8 text-gray-600" />
-              </div>
-              <div className="opacity-60 hover:opacity-100 transition-opacity flex items-center justify-center w-16 h-12 bg-gray-100 rounded-lg">
-                <ChartLine className="w-8 h-8 text-gray-600" />
-              </div>
-              <div className="opacity-60 hover:opacity-100 transition-opacity flex items-center justify-center w-16 h-12 bg-gray-100 rounded-lg">
-                <Cloud className="w-8 h-8 text-gray-600" />
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -1024,7 +1167,7 @@ export default function Home() {
                     <h3 className="font-inter font-semibold text-navy">
                       Email
                     </h3>
-                    <p className="text-warm-gray">pooja.suresh@email.com</p>
+                    <p className="text-warm-gray">pooja.adi2309@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-center">
@@ -1036,136 +1179,26 @@ export default function Home() {
                       LinkedIn
                     </h3>
                     <p className="text-warm-gray">
-                      linkedin.com/in/poojasuresh
+                      <a
+                        href="https://www.linkedin.com/in/pooja-suresh-79a6b2165/"
+                        rel="noopener noreferrer"
+                        className="text-current hover:underline"
+                      >
+                        linkedin.com/in/pooja-suresh
+                      </a>
                     </p>
-                  </div>
-                </div>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-navy rounded-xl flex items-center justify-center">
-                    <Phone className="text-white w-5 h-5" />
-                  </div>
-                  <div className="ml-4">
-                    <h3 className="font-inter font-semibold text-navy">
-                      Phone
-                    </h3>
-                    <p className="text-warm-gray">+1 (555) 123-4567</p>
                   </div>
                 </div>
               </div>
 
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <p className="text-warm-gray text-sm leading-relaxed">
-                  <strong className="text-navy">Open to:</strong> Program
-                  management opportunities, AI/Digital transformation
-                  consulting, strategic planning engagements, and thought
-                  leadership collaborations.
+                  <strong className="text-navy">Open to:</strong> opportunities
+                  in Program Management, Product, Project Management, and
+                  Digital Transformation.
                 </p>
               </div>
             </div>
-
-            <Card className="bg-gradient-to-br from-navy/5 to-soft-blue/5 p-8 rounded-2xl border border-soft-blue/20">
-              <CardContent className="p-0">
-                <Form {...form}>
-                  <form
-                    onSubmit={form.handleSubmit(onSubmit)}
-                    className="space-y-6"
-                  >
-                    <FormField
-                      control={form.control}
-                      name="name"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel className="text-sm font-medium text-navy">
-                            Name
-                          </FormLabel>
-                          <FormControl>
-                            <Input
-                              placeholder="Your full name"
-                              {...field}
-                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-blue focus:border-transparent transition-colors"
-                              data-testid="input-name"
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <FormField
-                      control={form.control}
-                      name="email"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel className="text-sm font-medium text-navy">
-                            Email
-                          </FormLabel>
-                          <FormControl>
-                            <Input
-                              type="email"
-                              placeholder="your.email@company.com"
-                              {...field}
-                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-blue focus:border-transparent transition-colors"
-                              data-testid="input-email"
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <FormField
-                      control={form.control}
-                      name="subject"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel className="text-sm font-medium text-navy">
-                            Subject
-                          </FormLabel>
-                          <FormControl>
-                            <Input
-                              placeholder="What's this about?"
-                              {...field}
-                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-blue focus:border-transparent transition-colors"
-                              data-testid="input-subject"
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <FormField
-                      control={form.control}
-                      name="message"
-                      render={({ field }) => (
-                        <FormItem>
-                          <FormLabel className="text-sm font-medium text-navy">
-                            Message
-                          </FormLabel>
-                          <FormControl>
-                            <Textarea
-                              rows={4}
-                              placeholder="Tell me about your project or opportunity..."
-                              {...field}
-                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-soft-blue focus:border-transparent transition-colors resize-none"
-                              data-testid="textarea-message"
-                            />
-                          </FormControl>
-                          <FormMessage />
-                        </FormItem>
-                      )}
-                    />
-                    <Button
-                      type="submit"
-                      disabled={contactMutation.isPending}
-                      className="w-full bg-gradient-to-r from-soft-blue to-navy hover:from-navy hover:to-soft-blue text-white px-8 py-4 rounded-lg font-semibold transition-all duration-300 transform hover:scale-[1.02]"
-                      data-testid="button-submit-contact"
-                    >
-                      {contactMutation.isPending
-                        ? "Sending..."
-                        : "Send Message"}
-                    </Button>
-                  </form>
-                </Form>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
@@ -1175,23 +1208,21 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-6 md:mb-0">
-              <h3 className="text-2xl font-inter font-bold mb-2">
-                Pooja Suresh
+              <h3 className="text-2xl font-inter font-bold mb-2 text-center">
+                Thanks for viewing my portfolio!
               </h3>
-              <p className="text-white/80">
-                Building the future, one program at a time.
-              </p>
+              <p className="text-white/80"></p>
             </div>
             <div className="flex space-x-6">
               <a
-                href="#"
+                href="https://www.linkedin.com/in/pooja-suresh-79a6b2165/"
                 className="text-white/80 hover:text-gold transition-colors"
                 data-testid="link-footer-linkedin"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
               <a
-                href="#"
+                href="https://github.com/pooja2309"
                 className="text-white/80 hover:text-gold transition-colors"
                 data-testid="link-footer-github"
               >
@@ -1201,8 +1232,8 @@ export default function Home() {
           </div>
           <div className="mt-8 pt-8 border-t border-white/20 text-center text-white/60 text-sm">
             <p>
-              &copy; 2024 Pooja Suresh. All rights reserved. | Designed with
-              passion for innovation and impact.
+              &copy; 2025 All rights reserved. | Designed with passion for
+              innovation and impact.
             </p>
           </div>
         </div>
