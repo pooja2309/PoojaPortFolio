@@ -752,7 +752,7 @@ export default function Home() {
               </h1>
 
               <img
-                src="/src/images/pooja-suresh-headshot.jpeg"
+                src="https://media.licdn.com/dms/image/v2/D5603AQGl8_CkvubZMQ/profile-displayphoto-scale_400_400/B56ZhtbyCrH0Ao-/0/1754182658255?e=1761177600&v=beta&t=zq4q-Ff2mZkrPHUdcwqOJamFu_abuOC3CLXa75v0BU4"
                 alt="Pooja Suresh professional headshot"
                 className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full border-4 border-white/20 shadow-xl object-cover"
               />
