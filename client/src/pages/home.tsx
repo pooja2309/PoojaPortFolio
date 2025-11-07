@@ -752,7 +752,7 @@ export default function Home() {
               </h1>
 
               <img
-                src="https://media.licdn.com/dms/image/v2/D5603AQFs6GXdQPs3DA/profile-displayphoto-crop_800_800/B56Zl9jBfFHkAI-/0/1758747957775?e=1761782400&v=beta&t=bTlLdzCOEs66_vDLEnJEl__jJ7Tnil_l_cmMR57S6Vc"
+                src="https://media.licdn.com/dms/image/v2/D5603AQFs6GXdQPs3DA/profile-displayphoto-scale_400_400/B56Zl9jBfFHkAg-/0/1758747957856?e=1764201600&v=beta&t=acWS6E_VYcBZrjz2bV2YtokIWXY6f17m9b757pYOicE"
                 alt="Pooja Suresh professional headshot"
                 className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 rounded-full border-4 border-white/20 shadow-xl object-cover"
               />
